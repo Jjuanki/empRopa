@@ -18,7 +18,7 @@
 export const siteConfig = {
   // 1. Identidad de Marca
   brand: {
-    name: 'TU MARCA', // Cambia aquí por el nombre real de tu marca
+    name: 'VOID',
     tagline: 'STREETWEAR & CUSTOM TEES',
     description: 'Prendas gráficas y personalizadas con estética urbana y minimalista.',
     year: new Date().getFullYear(),
@@ -27,15 +27,15 @@ export const siteConfig = {
   // 2. Canales de Contacto Directo
   contact: {
     // Reemplaza este número ficticio por tu número real de WhatsApp (solo números)
-    whatsappNumber: '573000000000', 
+    whatsappNumber: '593995706120', 
     email: 'contacto@tumarca.ejemplo.com',
-    location: 'Medellín / Envíos a todo el país', // Ciudad o cobertura de envíos
+    location: 'Ecuador-Quito', // Ciudad o cobertura de envíos
   },
 
   // 3. Mensajes predeterminados para WhatsApp
   whatsappMessages: {
     // Mensaje para el botón flotante y botones generales
-    general: '¡Hola! Vengo desde la página web de TU MARCA y me gustaría recibir información sobre sus prendas y opciones de personalización.',
+    general: '¡Hola! Vengo desde la página web de VOID y me gustaría recibir información sobre sus prendas y opciones de personalización.',
     
     // Mensaje para el botón del Hero / sección de personalización
     customOrder: '¡Hola! Quiero personalizar una camiseta con mi propio diseño. ¿Podrían indicarme cómo es el proceso y los precios?',
