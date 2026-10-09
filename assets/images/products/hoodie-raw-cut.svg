@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <rect width="600" height="750" fill="#141417"/>
+
+  <!-- Hoodie Silhouette -->
+  <g transform="translate(50, 30)">
+    <!-- Hood -->
+    <path d="M190 120 C190 40 310 40 310 120 Z" fill="#18181D" stroke="#303036" stroke-width="2"/>
+    <path d="M210 120 C210 60 290 60 290 120 Z" fill="#101014"/>
+
+    <!-- Body (Boxy Fit) -->
+    <path d="M160 110 L190 120 L310 120 L340 110 L470 210 L410 320 L370 290 L370 570 C370 575 365 580 360 580 L140 580 C135 580 130 575 130 570 L130 290 L90 320 L30 210 Z" 
+          fill="#1C1C22" stroke="#303036" stroke-width="2"/>
+
+    <!-- Large Front Print Graphic: SUBVERSION 00 -->
+    <g transform="translate(160, 200)">
+      <rect width="180" height="150" fill="#0F0F13" stroke="#303036" stroke-width="1.5"/>
+      <circle cx="90" cy="70" r="40" fill="none" stroke="#F5F5F5" stroke-width="2" stroke-dasharray="6,4"/>
+      <line x1="40" y1="70" x2="140" y2="70" stroke="#D4FF3F" stroke-width="3"/>
+      <text x="90" y="66" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="12" font-weight="900" letter-spacing="3" text-anchor="middle">SUBVERSION</text>
+      <text x="90" y="85" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="4" text-anchor="middle">00 // RAW</text>
+    </g>
+
+    <!-- Pocket -->
+    <path d="M170 410 L330 410 L350 480 L150 480 Z" fill="#16161B" stroke="#303036" stroke-width="1.5"/>
+  </g>
+
+  <!-- Tag -->
+  <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // HD-02</text>
+  <text x="550" y="710" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">BOXY FIT / GRAPHIC HOOD</text>
+</svg>

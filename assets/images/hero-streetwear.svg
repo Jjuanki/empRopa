@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141417"/>
+      <stop offset="50%" stop-color="#0E0E11"/>
+      <stop offset="100%" stop-color="#0B0B0D"/>
+    </linearGradient>
+    <radialGradient id="glowLime" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#D4FF3F" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#D4FF3F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="teeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24242B"/>
+      <stop offset="100%" stop-color="#151519"/>
+    </linearGradient>
+    <linearGradient id="foldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B0B0D" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#0B0B0D" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0B0B0D" stop-opacity="0.6"/>
+    </linearGradient>
+    <pattern id="dotGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#303036" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="1000" fill="url(#bgGrad)"/>
+  <rect width="900" height="1000" fill="url(#dotGrid)"/>
+  <rect width="900" height="1000" fill="url(#glowLime)"/>
+
+  <!-- Editorial Grid Lines & Accents -->
+  <line x1="80" y1="60" x2="820" y2="60" stroke="#303036" stroke-width="1"/>
+  <line x1="80" y1="940" x2="820" y2="940" stroke="#303036" stroke-width="1"/>
+  <line x1="80" y1="60" x2="80" y2="940" stroke="#303036" stroke-width="1"/>
+  <line x1="820" y1="60" x2="820" y2="940" stroke="#303036" stroke-width="1"/>
+
+  <!-- Technical Brand Tagging -->
+  <text x="110" y="100" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="12" letter-spacing="3" font-weight="600">COLLECTION // 01 — STREETWEAR DIVISION</text>
+  <text x="790" y="100" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="12" letter-spacing="2" font-weight="700" text-anchor="end">CUSTOM EDITION [01/01]</text>
+
+  <!-- Large Stylized T-Shirt (Boxy Fit) Silhouette -->
+  <g transform="translate(130, 140)">
+    <!-- Shadow -->
+    <path d="M210 90 L260 130 C280 145 360 145 380 130 L430 90 L590 190 L510 320 L470 300 L470 700 C470 710 460 720 450 720 L190 720 C180 720 170 710 170 700 L170 300 L130 320 L50 190 Z" 
+          fill="#050507" opacity="0.8" transform="translate(10, 20)"/>
+
+    <!-- T-Shirt Body -->
+    <path d="M210 90 L260 130 C280 145 360 145 380 130 L430 90 L590 190 L510 320 L470 300 L470 700 C470 710 460 720 450 720 L190 720 C180 720 170 710 170 700 L170 300 L130 320 L50 190 Z" 
+          fill="url(#teeGrad)" stroke="#303036" stroke-width="2"/>
+
+    <!-- Fabric shading & contours -->
+    <path d="M200 300 C240 330 250 500 240 715" stroke="#101013" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+    <path d="M440 300 C400 340 390 520 400 715" stroke="#101013" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Collar / Ribbed Neckline -->
+    <path d="M260 130 C280 145 360 145 380 130 C360 115 280 115 260 130 Z" fill="#18181E" stroke="#303036" stroke-width="2"/>
+    <path d="M265 128 C285 140 355 140 375 128" stroke="#D4FF3F" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.7"/>
+
+    <!-- Sleeve Cuffs -->
+    <line x1="50" y1="190" x2="130" y2="320" stroke="#303036" stroke-width="2"/>
+    <line x1="590" y1="190" x2="510" y2="320" stroke="#303036" stroke-width="2"/>
+
+    <!-- Front Graphic Print Area -->
+    <g transform="translate(230, 240)">
+      <!-- Graphic Frame -->
+      <rect width="180" height="230" rx="8" fill="#0B0B0D" stroke="#303036" stroke-width="1.5"/>
+      
+      <!-- Abstract Streetwear Graphic -->
+      <circle cx="90" cy="95" r="50" fill="none" stroke="#D4FF3F" stroke-width="3"/>
+      <polygon points="90,55 130,125 50,125" fill="#D4FF3F" opacity="0.15" stroke="#D4FF3F" stroke-width="2"/>
+      <circle cx="90" cy="95" r="16" fill="#D4FF3F"/>
+      
+      <!-- Barcode Graphic -->
+      <g transform="translate(30, 165)">
+        <line x1="0" y1="0" x2="0" y2="25" stroke="#F5F5F5" stroke-width="3"/>
+        <line x1="6" y1="0" x2="6" y2="25" stroke="#F5F5F5" stroke-width="1.5"/>
+        <line x1="12" y1="0" x2="12" y2="25" stroke="#F5F5F5" stroke-width="4"/>
+        <line x1="20" y1="0" x2="20" y2="25" stroke="#F5F5F5" stroke-width="2"/>
+        <line x1="26" y1="0" x2="26" y2="25" stroke="#F5F5F5" stroke-width="5"/>
+        <line x1="36" y1="0" x2="36" y2="25" stroke="#F5F5F5" stroke-width="1"/>
+        <line x1="42" y1="0" x2="42" y2="25" stroke="#F5F5F5" stroke-width="3"/>
+        <line x1="52" y1="0" x2="52" y2="25" stroke="#F5F5F5" stroke-width="2"/>
+        <line x1="60" y1="0" x2="60" y2="25" stroke="#F5F5F5" stroke-width="4"/>
+        <line x1="70" y1="0" x2="70" y2="25" stroke="#F5F5F5" stroke-width="1"/>
+        <line x1="76" y1="0" x2="76" y2="25" stroke="#F5F5F5" stroke-width="3"/>
+        <line x1="84" y1="0" x2="84" y2="25" stroke="#F5F5F5" stroke-width="2"/>
+        <line x1="94" y1="0" x2="94" y2="25" stroke="#F5F5F5" stroke-width="5"/>
+        <line x1="104" y1="0" x2="104" y2="25" stroke="#F5F5F5" stroke-width="2"/>
+        <line x1="112" y1="0" x2="112" y2="25" stroke="#F5F5F5" stroke-width="3"/>
+        <line x1="120" y1="0" x2="120" y2="25" stroke="#F5F5F5" stroke-width="1"/>
+      </g>
+      <text x="90" y="205" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">URBAN RESISTANCE // 2026</text>
+    </g>
+
+    <!-- Streetwear Woven Label at Bottom Hem -->
+    <rect x="190" y="695" width="40" height="25" fill="#D4FF3F"/>
+    <text x="210" y="711" fill="#0B0B0D" font-family="'Inter', sans-serif" font-size="8" font-weight="900" letter-spacing="1" text-anchor="middle">TM</text>
+  </g>
+
+  <!-- Editorial Typography Floating Overlays -->
+  <text x="110" y="870" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-1">OVERSIZED 240GSM</text>
+  <text x="110" y="905" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="14" letter-spacing="1">100% HEAVYWEIGHT COMBED COTTON // SERIGRAFÍA TEXTIL PREMIUM</text>
+
+  <!-- Target Reticle Icon -->
+  <g transform="translate(730, 840)">
+    <circle cx="30" cy="30" r="24" fill="none" stroke="#D4FF3F" stroke-width="1.5"/>
+    <line x1="30" y1="2" x2="30" y2="58" stroke="#D4FF3F" stroke-width="1.5"/>
+    <line x1="2" y1="30" x2="58" y2="30" stroke="#D4FF3F" stroke-width="1.5"/>
+    <circle cx="30" cy="30" r="4" fill="#D4FF3F"/>
+  </g>
+</svg>

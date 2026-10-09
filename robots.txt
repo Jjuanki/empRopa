@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Reemplaza con la URL definitiva de tu dominio o de tu usuario.github.io/repo/
+Sitemap: https://usuario.github.io/ropaEmp/sitemap.xml

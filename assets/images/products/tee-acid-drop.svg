@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <rect width="600" height="750" fill="#141417"/>
+  <defs>
+    <radialGradient id="acidGlow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#D4FF3F" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#D4FF3F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#acidGlow)"/>
+
+  <!-- T-shirt silhouette -->
+  <g transform="translate(60, 40)">
+    <path d="M160 70 L200 100 C215 110 265 110 280 100 L320 70 L440 145 L380 240 L350 225 L350 560 C350 565 345 570 340 570 L140 570 C135 570 130 565 130 560 L130 225 L100 240 L40 145 Z" 
+          fill="#16161B" stroke="#303036" stroke-width="2"/>
+    <path d="M200 100 C215 110 265 110 280 100 C265 88 215 88 200 100 Z" fill="#121215" stroke="#303036" stroke-width="1.5"/>
+
+    <!-- Acid Drop Neon Graphic -->
+    <g transform="translate(165, 170)">
+      <!-- Triangle and Acid dripping motif -->
+      <polygon points="75,20 135,130 15,130" fill="none" stroke="#D4FF3F" stroke-width="2.5"/>
+      <circle cx="75" cy="80" r="22" fill="#D4FF3F" opacity="0.2"/>
+      <circle cx="75" cy="80" r="8" fill="#D4FF3F"/>
+      <!-- Acid drops -->
+      <path d="M75 140 Q 75 155 70 160 Q 75 168 80 160 Q 75 155 75 140 Z" fill="#D4FF3F"/>
+      <path d="M50 135 Q 50 145 46 150 Q 50 156 54 150 Q 50 145 50 135 Z" fill="#D4FF3F"/>
+      <path d="M100 135 Q 100 145 96 150 Q 100 156 104 150 Q 100 145 100 135 Z" fill="#D4FF3F"/>
+      <text x="75" y="185" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="2" text-anchor="middle">ACID DROP // 02</text>
+    </g>
+
+    <!-- Lime stitching accent on collar -->
+    <path d="M205 98 C220 108 260 108 275 98" stroke="#D4FF3F" stroke-width="1.5" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Tag -->
+  <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TEE-02</text>
+  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">CYBERPUNK ACCENT</text>
+</svg>

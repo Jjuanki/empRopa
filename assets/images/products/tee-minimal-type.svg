@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <rect width="600" height="750" fill="#141417"/>
+
+  <!-- T-shirt silhouette (White / Raw Cream Tee) -->
+  <g transform="translate(60, 40)">
+    <path d="M160 70 L200 100 C215 110 265 110 280 100 L320 70 L440 145 L380 240 L350 225 L350 560 C350 565 345 570 340 570 L140 570 C135 570 130 565 130 560 L130 225 L100 240 L40 145 Z" 
+          fill="#ECECEF" stroke="#303036" stroke-width="2"/>
+    <path d="M200 100 C215 110 265 110 280 100 C265 88 215 88 200 100 Z" fill="#DCDCE0" stroke="#303036" stroke-width="1.5"/>
+
+    <!-- Subtle soft folds -->
+    <path d="M150 230 Q 180 320 170 560" stroke="#D3D3D8" stroke-width="5" fill="none" opacity="0.7"/>
+    <path d="M330 230 Q 300 320 310 560" stroke="#D3D3D8" stroke-width="5" fill="none" opacity="0.7"/>
+
+    <!-- Brutalist Typo Graphic in Crisp Black -->
+    <g transform="translate(160, 180)">
+      <text x="80" y="30" fill="#141417" font-family="'Inter', sans-serif" font-size="16" font-weight="900" letter-spacing="4" text-anchor="middle">TYPO // RAW</text>
+      <line x1="20" y1="42" x2="140" y2="42" stroke="#141417" stroke-width="2"/>
+      <text x="80" y="65" fill="#303036" font-family="'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="1" text-anchor="middle">LAT. 06° 14' 58" N</text>
+      <text x="80" y="80" fill="#303036" font-family="'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="1" text-anchor="middle">LONG. 75° 34' 49" W</text>
+      <rect x="50" y="98" width="60" height="20" fill="#141417"/>
+      <text x="80" y="112" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1" text-anchor="middle">SYSTEM 03</text>
+    </g>
+  </g>
+
+  <!-- Tag -->
+  <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TEE-03</text>
+  <text x="550" y="710" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">RAW WHITE / 100% COTTON</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <rect width="600" height="750" fill="#141417"/>
+
+  <!-- T-shirt silhouette -->
+  <g transform="translate(60, 40)">
+    <path d="M160 70 L200 100 C215 110 265 110 280 100 L320 70 L440 145 L380 240 L350 225 L350 560 C350 565 345 570 340 570 L140 570 C135 570 130 565 130 560 L130 225 L100 240 L40 145 Z" 
+          fill="#18181D" stroke="#303036" stroke-width="2"/>
+    <path d="M200 100 C215 110 265 110 280 100 C265 88 215 88 200 100 Z" fill="#131316" stroke="#303036" stroke-width="1.5"/>
+
+    <!-- Kanji District Graphic -->
+    <g transform="translate(175, 170)">
+      <rect width="130" height="170" fill="#0E0E11" stroke="#303036" stroke-width="1"/>
+      <!-- Stylized Kanji glyphs (District / Future) -->
+      <g stroke="#F5F5F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <line x1="45" y1="35" x2="85" y2="35"/>
+        <line x1="65" y1="25" x2="65" y2="75"/>
+        <path d="M45 50 L85 50 L85 75 L45 75 Z"/>
+        <line x1="40" y1="90" x2="90" y2="90"/>
+        <line x1="65" y1="85" x2="50" y2="120"/>
+        <line x1="65" y1="85" x2="80" y2="120"/>
+      </g>
+      <!-- Vertical red/lime technical tag -->
+      <rect x="105" y="30" width="12" height="50" fill="#D4FF3F"/>
+      <text x="111" y="60" fill="#0B0B0D" font-family="'Inter', sans-serif" font-size="8" font-weight="900" transform="rotate(90, 111, 60)" text-anchor="middle">DISTRICT 09</text>
+      <text x="65" y="145" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="8" letter-spacing="3" text-anchor="middle">SHIBUYA SECTOR</text>
+    </g>
+  </g>
+
+  <!-- Tag -->
+  <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TEE-04</text>
+  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">NEO-TOKYO STREET</text>
+</svg>

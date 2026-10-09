@@ -1,0 +1,20 @@
+{
+  "name": "ropa-emprendimiento-web",
+  "version": "1.0.0",
+  "description": "Sitio web estático moderno para emprendimiento de camisetas personalizadas y streetwear",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "preview": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "streetwear",
+    "camisetas-personalizadas",
+    "github-pages",
+    "static-site"
+  ],
+  "author": "TU MARCA",
+  "license": "MIT"
+}

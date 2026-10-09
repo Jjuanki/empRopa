@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <rect width="600" height="750" fill="#141417"/>
+
+  <!-- Tote Bag Silhouette -->
+  <g transform="translate(130, 70)">
+    <!-- Long Straps / Handles -->
+    <path d="M70 200 L70 40 C70 15 130 15 130 40 L130 200" fill="none" stroke="#25252D" stroke-width="16" stroke-linecap="round"/>
+    <path d="M210 200 L210 40 C210 15 270 15 270 40 L270 200" fill="none" stroke="#25252D" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Bag Body (Canvas 16oz) -->
+    <rect x="30" y="190" width="280" height="360" rx="6" fill="#1C1C22" stroke="#303036" stroke-width="2"/>
+
+    <!-- Heavy stitching lines -->
+    <line x1="30" y1="210" x2="310" y2="210" stroke="#303036" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="30" y1="530" x2="310" y2="530" stroke="#303036" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Front Print Graphic -->
+    <g transform="translate(70, 270)">
+      <rect width="200" height="180" rx="4" fill="#0F0F13" stroke="#303036" stroke-width="1.5"/>
+      <circle cx="100" cy="80" r="35" fill="none" stroke="#D4FF3F" stroke-width="2"/>
+      <polygon points="100,55 125,95 75,95" fill="#D4FF3F"/>
+      <text x="100" y="135" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="2" text-anchor="middle">HEAVY CANVAS</text>
+      <text x="100" y="152" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="8" letter-spacing="3" text-anchor="middle">16 OZ // DURABLE</text>
+    </g>
+
+    <!-- Lime Accent Tag on side -->
+    <rect x="25" y="460" width="8" height="35" fill="#D4FF3F"/>
+  </g>
+
+  <!-- Tag -->
+  <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TB-01</text>
+  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">16OZ ORGANIC CANVAS</text>
+</svg>

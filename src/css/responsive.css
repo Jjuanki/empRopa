@@ -1,0 +1,262 @@
+/**
+ * ==============================================================================
+ * DISEÑO RESPONSIVE Y MENÚ MÓVIL (src/css/responsive.css)
+ * ==============================================================================
+ * Adaptabilidad para pantallas de 320px a monitores 4K.
+ * Enfoque mobile-first y áreas seguras (safe-area-insets).
+ */
+
+/* ==============================================================================
+ * MENÚ MÓVIL (DRAWER DESPLEGABLE)
+ * ============================================================================== */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: min(85vw, 360px);
+  height: 100vh;
+  background-color: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  z-index: var(--z-modal);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+  transition: right var(--transition-smooth);
+}
+
+.mobile-nav-drawer.is-open {
+  right: 0;
+}
+
+.mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(11, 11, 13, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: calc(var(--z-modal) - 1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.mobile-nav-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.mobile-nav-links a {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+}
+
+.mobile-nav-links a:hover,
+.mobile-nav-links a.is-active {
+  color: var(--accent-color);
+  padding-left: 0.5rem;
+}
+
+.mobile-nav-footer {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ==============================================================================
+ * BREAKPOINTS MEDIA QUERIES
+ * ============================================================================== */
+
+/* Pantallas grandes (≤ 1200px) */
+@media (max-width: 1200px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets en horizontal / Laptops pequeñas (≤ 992px) */
+@media (max-width: 992px) {
+  :root {
+    --container-padding: 1.25rem;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-visual {
+    order: -1;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-scrollbox {
+    max-height: 600px;
+    padding: 1.5rem;
+  }
+
+  .identity-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Tablets en vertical / Móviles grandes (≤ 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .custom-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.75rem;
+  }
+
+  .identity-features {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-wa-tooltip {
+    display: none; /* En móviles táctiles evitamos tooltip flotante que pueda estorbar */
+  }
+
+  .catalog-header-sticky {
+    padding: 1.25rem 1.25rem 1rem 1.25rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Móviles estándar y pequeños (≤ 640px) */
+@media (max-width: 640px) {
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+
+  /* Catálogo en móviles: 1 columna amplia y legible para ver estampados claramente */
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Altura controlada y ergonómica para móviles:
+     62vh permite ver el contenido sin bloquear el scroll general del teléfono */
+  .catalog-scrollbox {
+    max-height: 62vh;
+    padding: 1rem;
+    overscroll-behavior: contain;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Soporte para áreas seguras (iPhone con barra inferior / notch) */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .floating-wa-wrapper {
+    bottom: calc(1.5rem + env(safe-area-inset-bottom));
+    right: calc(1.5rem + env(safe-area-inset-right));
+  }
+
+  .site-footer {
+    padding-bottom: calc(2.5rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* Pantallas extra pequeñas (≤ 360px) */
+@media (max-width: 360px) {
+  :root {
+    --container-padding: 0.85rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-stat__val {
+    font-size: 1.15rem;
+  }
+
+  .catalog-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

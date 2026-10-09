@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Básico -->
+  <title>TU MARCA | Camisetas Personalizadas y Streetwear</title>
+  <meta name="description" content="Emprendimiento de camisetas personalizadas y moda streetwear. Diseños gráficos únicos, corte oversized y confección de alta calidad. Haz tu pedido por WhatsApp.">
+  <meta name="keywords" content="camisetas personalizadas, streetwear, ropa urbana, camisetas graficas, moda independiente, oversized tees, hoodies">
+  <meta name="author" content="TU MARCA">
+  <meta name="theme-color" content="#0B0B0D">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TU MARCA | Camisetas Personalizadas y Streetwear">
+  <meta property="og:description" content="Transformamos tus ideas en prendas únicas. Explora nuestro catálogo urbano o personaliza tu camiseta por WhatsApp.">
+  <meta property="og:image" content="./assets/images/hero-streetwear.svg">
+  <meta property="og:url" content="https://tumarca.ejemplo.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TU MARCA | Camisetas Personalizadas">
+  <meta name="twitter:description" content="Diseño streetwear minimalista y personalización de camisetas de alta calidad.">
+  <meta name="twitter:image" content="./assets/images/hero-streetwear.svg">
+
+  <!-- Favicon Local -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+  <!-- Tipografía Google Fonts (Inter con precarga segura) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Hojas de Estilo Modulares -->
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/layout.css">
+  <link rel="stylesheet" href="./src/css/components.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+
+  <!-- ==============================================================================
+       HEADER / BARRA DE NAVEGACIÓN SUPERIOR
+       ============================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Logotipo Tipográfico Provisional -->
+      <a href="#hero" class="brand-logo" aria-label="Ir al inicio de TU MARCA">
+        <span class="brand-logo__mark">TM</span>
+        <span class="brand-logo__text" data-bind="brand.name">TU MARCA</span>
+      </a>
+
+      <!-- Navegación de Escritorio -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#hero" class="nav-desktop__link is-active">Inicio</a>
+        <a href="#personalizacion" class="nav-desktop__link">Personalización</a>
+        <a href="#catalogo" class="nav-desktop__link">Catálogo</a>
+        <a href="#identidad" class="nav-desktop__link">Nosotros</a>
+        <a href="#contacto" class="nav-desktop__link">Contacto</a>
+      </nav>
+
+      <!-- Acciones de Encabezado -->
+      <div class="header-actions">
+        <a 
+          href="#" 
+          class="btn btn-whatsapp btn-header-wa" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Consultar por WhatsApp con TU MARCA"
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.203c.043.072.043.42-.101.825z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <!-- Botón Menú Hamburguesa Móvil -->
+        <button 
+          type="button" 
+          class="nav-toggle-btn" 
+          aria-label="Abrir menú de navegación" 
+          aria-expanded="false" 
+          aria-controls="mobile-menu"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Menú Desplegable Móvil -->
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-menu" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+    <div>
+      <div class="mobile-nav-header">
+        <a href="#hero" class="brand-logo" aria-label="Inicio">
+          <span class="brand-logo__mark">TM</span>
+          <span class="brand-logo__text" data-bind="brand.name">TU MARCA</span>
+        </a>
+        <button type="button" class="nav-toggle-btn mobile-nav-close" aria-label="Cerrar menú móvil">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Navegación móvil">
+        <a href="#hero">Inicio</a>
+        <a href="#personalizacion">Personalización</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#identidad">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="#" class="btn btn-whatsapp btn-header-wa" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.203c.043.072.043.42-.101.825z"/>
+        </svg>
+        <span>Escríbenos a WhatsApp</span>
+      </a>
+      <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+        Atención directa y asesoría de diseño.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==============================================================================
+       MAIN / CONTENIDO PRINCIPAL
+       ============================================================================== -->
+  <main id="main-content">
+
+    <!-- SECCIÓN HERO / PORTADA -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Columna Texto y CTAs -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="hero-badge__dot"></span>
+              <span>DROP 01 // EDICIÓN DISPONIBLE</span>
+            </div>
+            
+            <h1 id="hero-heading" class="hero-title">
+              CAMISETAS PERSONALIZADAS. <span class="text-accent">TU ESTILO,</span> TUS REGLAS.
+            </h1>
+            
+            <p class="hero-description">
+              Transformamos tus ideas en prendas únicas. Explora nuestros diseños gráficos con estética urbana o cuéntanos qué quieres crear para fabricar tu prenda personalizada.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#catalogo" class="btn btn-primary">
+                Explorar catálogo
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="btn btn-secondary btn-hero-custom" target="_blank" rel="noopener noreferrer">
+                Personalizar mi camiseta
+              </a>
+            </div>
+
+            <!-- Métricas Clave de Confianza -->
+            <div class="hero-stats">
+              <div class="hero-stat__item">
+                <span class="hero-stat__val">100%</span>
+                <span class="hero-stat__label">Algodón pesado</span>
+              </div>
+              <div class="hero-stat__item">
+                <span class="hero-stat__val">CUSTOM</span>
+                <span class="hero-stat__label">Piezas a medida</span>
+              </div>
+              <div class="hero-stat__item">
+                <span class="hero-stat__val">DIRECT</span>
+                <span class="hero-stat__label">Trato en WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Visual Editorial -->
+          <div class="hero-visual">
+            <div class="hero-visual__frame">
+              <img 
+                src="./assets/images/hero-streetwear.svg" 
+                alt="Camiseta gráfica de corte oversized estilo streetwear urbano" 
+                class="hero-visual__img"
+                width="900"
+                height="1000"
+                fetchpriority="high"
+              />
+              <div class="hero-visual__badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D4FF3F" stroke-width="2.5">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>BOX FIT // SERIGRAFÍA TEXTIL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE PERSONALIZACIÓN -->
+    <section id="personalizacion" class="section section--alt" aria-labelledby="custom-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">// PROCESO DE FABRICACIÓN</span>
+          <h2 id="custom-heading" class="section-title">¿CÓMO PERSONALIZAR TU PRENDA?</h2>
+          <p class="section-subtitle">
+            Sin configuradores confusos ni procesos automáticos impersonales. Te asesoramos directamente para lograr el mejor acabado visual.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Paso 1 -->
+          <div class="step-card">
+            <span class="step-card__num">01</span>
+            <h3 class="step-card__title">Cuéntanos tu idea</h3>
+            <p class="step-card__desc">
+              Envíanos tu ilustración, logotipo, frase o referencia gráfica a través de WhatsApp. Te orientamos sobre proporciones y ubicaciones óptimas.
+            </p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="step-card">
+            <span class="step-card__num">02</span>
+            <h3 class="step-card__title">Elige tu prenda y diseño</h3>
+            <p class="step-card__desc">
+              Selecciona el tipo de prenda (camiseta regular, boxy fit, hoodie), el color base (negro, blanco o tonos especiales) y el tamaño del estampado.
+            </p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="step-card">
+            <span class="step-card__num">03</span>
+            <h3 class="step-card__title">Concreta tu pedido</h3>
+            <p class="step-card__desc">
+              Revisamos la muestra digital contigo, confirmamos el acabado y coordinamos la producción y el envío directamente por chat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Banner de Contacto para Personalización -->
+        <div class="custom-banner">
+          <div class="custom-banner__text">
+            <h3>¿Tienes un proyecto, marca o diseño propio en mente?</h3>
+            <p>Escríbenos directamente y te daremos respuesta personalizada sobre tu idea.</p>
+          </div>
+          <a href="#" class="btn btn-whatsapp btn-custom-section" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.203c.043.072.043.42-.101.825z"/>
+            </svg>
+            <span>Iniciar personalización</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         SECCIÓN DEL CATÁLOGO (CONTENEDOR INDEPENDIENTE CON SCROLL PROPIO)
+         ============================================================================== -->
+    <section id="catalogo" class="section" aria-labelledby="catalog-title">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-badge">// COLECCIÓN ACTUAL</span>
+          <h2 class="section-title">EXPLORA EL CATÁLOGO</h2>
+          <p class="section-subtitle">
+            Navega por nuestra selección de prendas listas para confeccionar. Consulta cualquier modelo por WhatsApp para verificar disponibilidad o adaptarlo a tu gusto.
+          </p>
+        </div>
+
+        <!-- CONTENEDOR DELIMITADO CON MARCO VISUAL Y DESPLAZAMIENTO VERTICAL AUTÓNOMO -->
+        <div class="catalog-wrapper">
+          
+          <!-- Encabezado y Filtros Sticky dentro del contenedor -->
+          <div class="catalog-header-sticky">
+            <div class="catalog-header-top">
+              <div class="catalog-title-group">
+                <h2 id="catalog-title">
+                  CATÁLOGO
+                  <span class="catalog-counter">Cargando...</span>
+                </h2>
+                <p class="catalog-subtitle">Desplázate hacia abajo para ver todas las prendas disponibles</p>
+              </div>
+            </div>
+
+            <!-- Píldoras de Filtro por Categoría -->
+            <nav class="catalog-filters" aria-label="Filtro de categorías de productos">
+              <!-- Se generan dinámicamente desde src/js/components/catalog.js -->
+            </nav>
+          </div>
+
+          <!-- ÁREA CON SCROLL INDEPENDIENTE -->
+          <div class="catalog-scrollbox" tabindex="0" role="region" aria-label="Listado de productos con desplazamiento independiente">
+            <div class="catalog-grid">
+              <!-- Las tarjetas se renderizan dinámicamente con JavaScript -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE IDENTIDAD Y MANIFIESTO DE MARCA -->
+    <section id="identidad" class="section section--alt" aria-labelledby="identity-heading">
+      <div class="container">
+        <div class="identity-grid">
+          
+          <div class="identity-content">
+            <span class="section-badge">// FILOSOFÍA DE MARCA</span>
+            <h2 id="identity-heading">ROPA CON IDENTIDAD URBANA</h2>
+            <p>
+              Creemos en las prendas como un medio de autenticidad y expresión. Cada camiseta que estampamos respeta una estética sobria, tipografías contundentes y composiciones de inspiración contemporánea.
+            </p>
+            <p>
+              No producimos en masa sin criterio: cuidamos la textura de la tela, el grosor de los cuellos y la durabilidad de los estampados para que lleves prendas que conserven su carácter lavado tras lavado.
+            </p>
+
+            <div class="identity-features">
+              <div class="feature-item">
+                <h4 class="feature-item__title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Telas de Alto Gramaje
+                </h4>
+                <p class="feature-item__desc">Algodón pesado (240g - 400g) de caída estructurada y durabilidad superior.</p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-item__title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Estampados de Precisión
+                </h4>
+                <p class="feature-item__desc">Tintas textiles formuladas para resistir lavados continuos sin cuartearse.</p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-item__title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Siluetas Urbanas
+                </h4>
+                <p class="feature-item__desc">Cortes pensados en la cultura streetwear actual: boxy fit, regular y oversized.</p>
+              </div>
+
+              <div class="feature-item">
+                <h4 class="feature-item__title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Atención Directa
+                </h4>
+                <p class="feature-item__desc">Trato humano sin intermediarios para coordinar cada detalle de tu orden.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Muestra visual de estética -->
+          <div class="identity-visual">
+            <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-color); letter-spacing: 0.15em; display: block; margin-bottom: 1rem;">
+                // LOOKBOOK PREVIEW
+              </span>
+              <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-primary);">
+                DISEÑADO PARA QUIENES NO SIGUEN TENDENCIAS VACÍAS.
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 440px; margin: 0 auto 1.75rem;">
+                Tanto si eliges uno de nuestros diseños gráficos como si nos traes tu propia propuesta, cuidamos cada costura y detalle.
+              </p>
+              <a href="#catalogo" class="btn btn-primary">
+                Ver prendas disponibles
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section id="contacto" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-badge">// HABLEMOS</span>
+          <h2 id="contact-heading">¿LISTO PARA CREAR TU PRENDA?</h2>
+          <p>
+            Escríbenos por WhatsApp para cotizar tu camiseta personalizada, consultar disponibilidad de tallas o resolver cualquier duda sobre el catálogo.
+          </p>
+
+          <div class="contact-actions">
+            <a href="#" class="btn btn-whatsapp btn-contact-wa" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.203c.043.072.043.42-.101.825z"/>
+              </svg>
+              <span>Abrir chat de WhatsApp</span>
+            </a>
+            <a href="#catalogo" class="btn btn-secondary">
+              Explorar modelos
+            </a>
+          </div>
+
+          <!-- Redes Sociales Configurables -->
+          <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn" data-social="instagram" aria-label="Visitar nuestro Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-btn" data-social="tiktok" aria-label="Visitar nuestro TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.86c.01 1.75-.48 3.55-1.57 4.93-1.49 1.93-3.9 3.05-6.34 2.9-2.28-.1-4.43-1.28-5.7-3.15-1.54-2.21-1.69-5.26-.37-7.6 1.19-2.14 3.52-3.55 5.97-3.6.38-.02.77 0 1.15.04v4.13c-.34-.05-.69-.06-1.04-.03-1.08.06-2.14.62-2.72 1.53-.78 1.18-.67 2.87.26 3.93.81.93 2.16 1.25 3.33.88.94-.28 1.68-1.07 1.87-2.04.09-.43.11-.87.11-1.31V.02z"/>
+              </svg>
+              <span>TikTok</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================================================
+       FOOTER / PIE DE PÁGINA
+       ============================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <h3 class="footer-brand__name" data-bind="brand.name">TU MARCA</h3>
+          <p class="footer-brand__desc">
+            Estudio independiente de camisetas personalizadas y prendas gráficas con estética streetwear oscura y minimalista.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">NAVEGACIÓN</h4>
+          <nav class="footer-nav" aria-label="Navegación del pie de página">
+            <a href="#hero">Inicio</a>
+            <a href="#personalizacion">Personalización</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#identidad">Filosofía</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">CONTACTO DIRECTO</h4>
+          <nav class="footer-nav" aria-label="Canales de contacto">
+            <a href="#" class="btn-contact-wa" target="_blank" rel="noopener noreferrer">WhatsApp Oficial</a>
+            <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" data-social="tiktok" target="_blank" rel="noopener noreferrer">TikTok</a>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-bind="year">2026</span> <span data-bind="brand.name">TU MARCA</span>. Todos los derechos reservados.</p>
+        <p>Prendas personalizadas y confección independiente.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+       BOTÓN FLOTANTE PERMANENTE DE WHATSAPP
+       ============================================================================== -->
+  <aside class="floating-wa-wrapper" aria-label="Canal de ayuda rápida">
+    <span class="floating-wa-tooltip">Consultar por WhatsApp</span>
+    <a 
+      href="#" 
+      class="floating-wa-btn" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      aria-label="Contactar a TU MARCA por WhatsApp"
+    >
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.203c.043.072.043.42-.101.825z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Script modular moderno -->
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
