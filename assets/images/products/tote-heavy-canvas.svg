@@ -17,17 +17,17 @@
     <!-- Front Print Graphic -->
     <g transform="translate(70, 270)">
       <rect width="200" height="180" rx="4" fill="#0F0F13" stroke="#303036" stroke-width="1.5"/>
-      <circle cx="100" cy="80" r="35" fill="none" stroke="#D4FF3F" stroke-width="2"/>
-      <polygon points="100,55 125,95 75,95" fill="#D4FF3F"/>
+      <circle cx="100" cy="80" r="35" fill="none" stroke="#60519b" stroke-width="2"/>
+      <polygon points="100,55 125,95 75,95" fill="#60519b"/>
       <text x="100" y="135" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="2" text-anchor="middle">HEAVY CANVAS</text>
       <text x="100" y="152" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="8" letter-spacing="3" text-anchor="middle">16 OZ // DURABLE</text>
     </g>
 
     <!-- Lime Accent Tag on side -->
-    <rect x="25" y="460" width="8" height="35" fill="#D4FF3F"/>
+    <rect x="25" y="460" width="8" height="35" fill="#60519b"/>
   </g>
 
   <!-- Tag -->
   <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TB-01</text>
-  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">16OZ ORGANIC CANVAS</text>
+  <text x="550" y="710" fill="#60519b" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">16OZ ORGANIC CANVAS</text>
 </svg>

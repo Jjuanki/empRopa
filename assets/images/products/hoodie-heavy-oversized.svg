@@ -10,8 +10,8 @@
     <!-- Drawstrings -->
     <line x1="225" y1="115" x2="225" y2="210" stroke="#F5F5F5" stroke-width="3" stroke-linecap="round"/>
     <line x1="275" y1="115" x2="275" y2="210" stroke="#F5F5F5" stroke-width="3" stroke-linecap="round"/>
-    <rect x="223" y="205" width="4" height="12" fill="#D4FF3F"/>
-    <rect x="273" y="205" width="4" height="12" fill="#D4FF3F"/>
+    <rect x="223" y="205" width="4" height="12" fill="#60519b"/>
+    <rect x="273" y="205" width="4" height="12" fill="#60519b"/>
 
     <!-- Sleeves and Heavy Body -->
     <path d="M160 110 L190 120 L310 120 L340 110 L470 210 L410 320 L370 290 L370 580 C370 585 365 590 360 590 L140 590 C135 590 130 585 130 580 L130 290 L90 320 L30 210 Z" 
@@ -24,7 +24,7 @@
 
     <!-- Subtle Graphic Print on Chest -->
     <g transform="translate(200, 240)">
-      <text x="50" y="20" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="10" font-weight="900" letter-spacing="3" text-anchor="middle">SHADOW SYSTEM</text>
+      <text x="50" y="20" fill="#60519b" font-family="'Inter', sans-serif" font-size="10" font-weight="900" letter-spacing="3" text-anchor="middle">SHADOW SYSTEM</text>
       <text x="50" y="35" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="7" letter-spacing="2" text-anchor="middle">HEAVYWEIGHT 400GSM</text>
     </g>
 
@@ -34,5 +34,5 @@
 
   <!-- Tag -->
   <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // HD-01</text>
-  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">HEAVY HOODIE 400GSM</text>
+  <text x="550" y="710" fill="#60519b" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">HEAVY HOODIE 400GSM</text>
 </svg>

@@ -23,7 +23,7 @@
     <g transform="translate(180, 180)">
       <rect width="120" height="150" fill="#0B0B0D" stroke="#303036" stroke-width="1"/>
       <!-- Soundwave / Glitch bars -->
-      <g stroke="#D4FF3F" stroke-width="2" stroke-linecap="round">
+      <g stroke="#60519b" stroke-width="2" stroke-linecap="round">
         <line x1="20" y1="75" x2="20" y2="75"/>
         <line x1="28" y1="65" x2="28" y2="85"/>
         <line x1="36" y1="50" x2="36" y2="100"/>
@@ -40,10 +40,10 @@
     </g>
 
     <!-- Bottom Hem woven label -->
-    <rect x="140" y="552" width="28" height="18" fill="#D4FF3F"/>
+    <rect x="140" y="552" width="28" height="18" fill="#60519b"/>
   </g>
 
   <!-- Tag / Watermark -->
   <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TEE-01</text>
-  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">BLACK EDITION</text>
+  <text x="550" y="710" fill="#60519b" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">BLACK EDITION</text>
 </svg>

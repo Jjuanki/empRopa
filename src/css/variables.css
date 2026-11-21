@@ -23,10 +23,10 @@
   --border-light: #3F3F46;     /* Bordes en estados activos / hover */
 
   /* 4. Color de acento (Uso moderado: botones, badges, estados activos) */
-  --accent-color: #D4FF3F;     /* Verde lima neón */
-  --accent-hover: #BEEA34;     /* Verde lima interactivo */
-  --accent-text: #0B0B0D;      /* Texto de alto contraste sobre fondo lima */
-  --accent-glow: rgba(212, 255, 63, 0.15);
+  --accent-color: #60519b;     /* Púrpura principal */
+  --accent-hover: #7362b5;     /* Púrpura interactivo / hover */
+  --accent-text: #FFFFFF;      /* Texto de alto contraste sobre fondo púrpura */
+  --accent-glow: rgba(96, 81, 155, 0.25);
 
   /* 5. Color oficial de WhatsApp */
   --wa-color: #25D366;
@@ -57,7 +57,7 @@
   /* 10. Sombras sutiles */
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
   --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
-  --shadow-accent: 0 0 25px rgba(212, 255, 63, 0.2);
+  --shadow-accent: 0 0 25px rgba(96, 81, 155, 0.35);
   --shadow-wa: 0 8px 24px rgba(37, 211, 102, 0.35);
 
   /* 11. Z-indexes */

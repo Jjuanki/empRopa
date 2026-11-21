@@ -2,8 +2,8 @@
   <rect width="600" height="750" fill="#141417"/>
   <defs>
     <radialGradient id="acidGlow" cx="50%" cy="40%" r="40%">
-      <stop offset="0%" stop-color="#D4FF3F" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#D4FF3F" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#60519b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#60519b" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="600" height="750" fill="url(#acidGlow)"/>
@@ -17,21 +17,21 @@
     <!-- Acid Drop Neon Graphic -->
     <g transform="translate(165, 170)">
       <!-- Triangle and Acid dripping motif -->
-      <polygon points="75,20 135,130 15,130" fill="none" stroke="#D4FF3F" stroke-width="2.5"/>
-      <circle cx="75" cy="80" r="22" fill="#D4FF3F" opacity="0.2"/>
-      <circle cx="75" cy="80" r="8" fill="#D4FF3F"/>
+      <polygon points="75,20 135,130 15,130" fill="none" stroke="#60519b" stroke-width="2.5"/>
+      <circle cx="75" cy="80" r="22" fill="#60519b" opacity="0.2"/>
+      <circle cx="75" cy="80" r="8" fill="#60519b"/>
       <!-- Acid drops -->
-      <path d="M75 140 Q 75 155 70 160 Q 75 168 80 160 Q 75 155 75 140 Z" fill="#D4FF3F"/>
-      <path d="M50 135 Q 50 145 46 150 Q 50 156 54 150 Q 50 145 50 135 Z" fill="#D4FF3F"/>
-      <path d="M100 135 Q 100 145 96 150 Q 100 156 104 150 Q 100 145 100 135 Z" fill="#D4FF3F"/>
+      <path d="M75 140 Q 75 155 70 160 Q 75 168 80 160 Q 75 155 75 140 Z" fill="#60519b"/>
+      <path d="M50 135 Q 50 145 46 150 Q 50 156 54 150 Q 50 145 50 135 Z" fill="#60519b"/>
+      <path d="M100 135 Q 100 145 96 150 Q 100 156 104 150 Q 100 145 100 135 Z" fill="#60519b"/>
       <text x="75" y="185" fill="#F5F5F5" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="2" text-anchor="middle">ACID DROP // 02</text>
     </g>
 
     <!-- Lime stitching accent on collar -->
-    <path d="M205 98 C220 108 260 108 275 98" stroke="#D4FF3F" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <path d="M205 98 C220 108 260 108 275 98" stroke="#60519b" stroke-width="1.5" stroke-dasharray="2,2"/>
   </g>
 
   <!-- Tag -->
   <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TEE-02</text>
-  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">CYBERPUNK ACCENT</text>
+  <text x="550" y="710" fill="#60519b" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">CYBERPUNK ACCENT</text>
 </svg>

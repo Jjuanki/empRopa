@@ -1,4 +1,4 @@
-# TU MARCA — Web Oficial de Camisetas Personalizadas y Streetwear
+# VOID — Web Oficial de Camisetas Personalizadas y Streetwear
 
 Sitio web estático moderno, minimalista y de alto impacto visual para emprendimientos de ropa personalizada, prendas gráficas y cultura streetwear. 
 
@@ -8,7 +8,7 @@ Diseñado con un enfoque **mobile-first**, accesible, sin dependencias pesadas y
 
 ## ⚡ Características Principales
 
-* **Estética Urbana y Minimalista:** Paleta oscura (`#0B0B0D`, `#141417`, `#1C1C21`) con toques equilibrados de acento verde lima (`#D4FF3F`).
+* **Estética Urbana y Minimalista:** Paleta oscura (`#0B0B0D`, `#141417`, `#1C1C21`) con toques equilibrados de acento púrpura (`#60519b`).
 * **Catálogo con Desplazamiento Vertical Autónomo:** Contenedor delimitado con marco visual, cabecera fija (*sticky*) y barra de scroll propia que no satura la navegación general de la página.
 * **Filtros por Categoría en Tiempo Real:** Filtrado en el cliente sin recargar la página (Todos, Camisetas, Hoodies, Otros productos) y preparado para ampliarse a pantalones o accesorios en el futuro.
 * **Integración Directa con WhatsApp:**
@@ -185,7 +185,7 @@ Si en el futuro deseas cambiar la identidad visual o los colores de acento, abre
   --bg-primary: #0B0B0D;       /* Fondo principal */
   --bg-secondary: #141417;     /* Fondo de secciones y catálogo */
   --bg-card: #1C1C21;          /* Fondo de tarjetas de producto */
-  --accent-color: #D4FF3F;     /* Color de acento (verde lima actual) */
+  --accent-color: #60519b;     /* Color de acento (púrpura actual) */
   --text-primary: #F5F5F5;     /* Texto principal */
   --border-color: #303036;     /* Líneas y bordes divisorios */
 }

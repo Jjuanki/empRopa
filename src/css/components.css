@@ -130,10 +130,10 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--accent-color);
-  background-color: rgba(212, 255, 63, 0.1);
+  background-color: rgba(96, 81, 155, 0.15);
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(212, 255, 63, 0.25);
+  border: 1px solid rgba(96, 81, 155, 0.35);
 }
 
 .catalog-subtitle {

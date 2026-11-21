@@ -18,7 +18,7 @@
       <text x="80" y="65" fill="#303036" font-family="'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="1" text-anchor="middle">LAT. 06° 14' 58" N</text>
       <text x="80" y="80" fill="#303036" font-family="'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="1" text-anchor="middle">LONG. 75° 34' 49" W</text>
       <rect x="50" y="98" width="60" height="20" fill="#141417"/>
-      <text x="80" y="112" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1" text-anchor="middle">SYSTEM 03</text>
+      <text x="80" y="112" fill="#60519b" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="1" text-anchor="middle">SYSTEM 03</text>
     </g>
   </g>
 

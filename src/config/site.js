@@ -27,8 +27,8 @@ export const siteConfig = {
   // 2. Canales de Contacto Directo
   contact: {
     // Reemplaza este número ficticio por tu número real de WhatsApp (solo números)
-    whatsappNumber: '593995706120', 
-    email: 'contacto@tumarca.ejemplo.com',
+    whatsappNumber: '593979106260', 
+    email: 'contacto@void.ejemplo.com',
     location: 'Ecuador-Quito', // Ciudad o cobertura de envíos
   },
 
@@ -49,8 +49,8 @@ export const siteConfig = {
   social: [
     {
       name: 'Instagram',
-      handle: '@tumarca.oficial',
-      url: 'https://instagram.com/tumarca.ejemplo', // Cambia por tu perfil real
+      handle: '@voiddd._.v',
+      url: 'https://www.instagram.com/voiddd._.v/',
       icon: 'instagram',
     },
     {
@@ -61,7 +61,7 @@ export const siteConfig = {
     },
     {
       name: 'WhatsApp',
-      handle: '+57 300 000 0000',
+      handle: '+593 979106260',
       url: null, // Se genera automáticamente con el número de arriba
       icon: 'whatsapp',
     }

@@ -20,7 +20,7 @@
         <line x1="65" y1="85" x2="80" y2="120"/>
       </g>
       <!-- Vertical red/lime technical tag -->
-      <rect x="105" y="30" width="12" height="50" fill="#D4FF3F"/>
+      <rect x="105" y="30" width="12" height="50" fill="#60519b"/>
       <text x="111" y="60" fill="#0B0B0D" font-family="'Inter', sans-serif" font-size="8" font-weight="900" transform="rotate(90, 111, 60)" text-anchor="middle">DISTRICT 09</text>
       <text x="65" y="145" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="8" letter-spacing="3" text-anchor="middle">SHIBUYA SECTOR</text>
     </g>
@@ -28,5 +28,5 @@
 
   <!-- Tag -->
   <text x="50" y="710" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="2">MODEL // TEE-04</text>
-  <text x="550" y="710" fill="#D4FF3F" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">NEO-TOKYO STREET</text>
+  <text x="550" y="710" fill="#60519b" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="end">NEO-TOKYO STREET</text>
 </svg>
