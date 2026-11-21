@@ -384,6 +384,170 @@
   line-height: 1.55;
 }
 
+/* ==============================================================================
+ * TARJETAS DE TARIFAS Y ENTREGAS EN PERSONALIZACIÓN
+ * ============================================================================== */
+.custom-pricing-box {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.custom-pricing-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+}
+
+.custom-pricing-title {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.custom-pricing-sub {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.custom-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.pricing-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-light);
+}
+
+.pricing-card--featured {
+  border-color: rgba(96, 81, 155, 0.6);
+  background: linear-gradient(180deg, rgba(96, 81, 155, 0.08) 0%, var(--bg-secondary) 100%);
+}
+
+.pricing-card__type {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card__price {
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.pricing-card__currency {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.pricing-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.pricing-card__tag {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--accent-light);
+  background-color: rgba(96, 81, 155, 0.12);
+  border: 1px solid rgba(96, 81, 155, 0.3);
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.metro-delivery-banner {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.08) 0%, rgba(20, 20, 24, 0.8) 100%);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.metro-delivery-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  background-color: rgba(37, 211, 102, 0.15);
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(37, 211, 102, 0.4);
+}
+
+.metro-delivery-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metro-delivery-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #25D366;
+  letter-spacing: 0.02em;
+}
+
+.metro-delivery-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.metro-delivery-desc strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .custom-pricing-box {
+    padding: 1.5rem;
+  }
+  .custom-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .metro-delivery-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
 .custom-banner {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);

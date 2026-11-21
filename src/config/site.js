@@ -29,20 +29,20 @@ export const siteConfig = {
     // Reemplaza este número ficticio por tu número real de WhatsApp (solo números)
     whatsappNumber: '593979106260', 
     email: 'contacto@void.ejemplo.com',
-    location: 'Ecuador-Quito', // Ciudad o cobertura de envíos
+    location: 'Quito, Ecuador (Entregas en cualquier estación del Metro)', // Ciudad o cobertura de envíos
   },
 
   // 3. Mensajes predeterminados para WhatsApp
   whatsappMessages: {
     // Mensaje para el botón flotante y botones generales
-    general: '¡Hola! Vengo desde la página web de VOID y me gustaría recibir información sobre sus prendas y opciones de personalización.',
+    general: '¡Hola! Vengo desde la página web de VOID y me gustaría recibir información sobre sus prendas y opciones de personalización con entrega en el Metro de Quito.',
     
     // Mensaje para el botón del Hero / sección de personalización
-    customOrder: '¡Hola! Quiero personalizar una camiseta con mi propio diseño. ¿Podrían indicarme cómo es el proceso y los precios?',
+    customOrder: '¡Hola! Quiero cotizar una camiseta personalizada ($16 corte clásico / $18 oversize o baby tee). ¿Podrían indicarme cómo coordinar el diseño y la entrega en el Metro de Quito?',
     
     // Generador dinámico de mensaje para tarjetas de productos del catálogo
-    productInquiry: (productName, category) => 
-      `¡Hola! Estoy interesado/a en la prenda "${productName}" (${category}) que vi en su catálogo web. ¿Tienen disponibilidad o es posible personalizarla?`,
+    productInquiry: (productName, category, price) => 
+      `¡Hola! Estoy interesado/a en la prenda "${productName}" (${category}) por ${price || '$14 USD'} que vi en su catálogo web (con entrega incluida en el Metro de Quito). ¿Tienen disponibilidad?`,
   },
 
   // 4. Redes Sociales (deja en '#' o reemplaza con tus URLs reales)

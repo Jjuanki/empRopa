@@ -375,6 +375,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.product-delivery-pill {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #25D366;
+  background-color: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  white-space: nowrap;
 }
 
 .product-card__price-label {
@@ -629,6 +646,46 @@
   font-weight: 800;
   color: var(--text-primary);
   margin-top: 0.25rem;
+}
+
+.product-lightbox__price-badge {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--accent-light);
+  background: rgba(96, 81, 155, 0.15);
+  border: 1px solid rgba(96, 81, 155, 0.4);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+}
+
+.product-lightbox__perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.product-lightbox__perk-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.product-lightbox__perk-item .perk-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.product-lightbox__perk-item strong {
+  color: var(--text-primary);
 }
 
 .product-lightbox__cat {
